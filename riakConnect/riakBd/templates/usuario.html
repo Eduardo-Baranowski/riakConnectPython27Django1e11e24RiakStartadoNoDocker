@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+  <h1>Lista de Inserções</h1>
+
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Locação</th>
+      <th scope="col">Profissão</th>
+      <th scope="col">Apelidos</th>      
+    </tr>
+  </thead>
+  <tbody>  
+  	<tr>
+  		<th scope="row">{{name}}</th>
+  		<td>{{ location }}</td>
+        <td>{{ role}}</td>
+  		<td> {{fulname}}</td>
+  		<td>  
+  </tbody>
+</table>
+{% endblock %}

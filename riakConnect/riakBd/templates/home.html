@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <br><br><br><br><br><br>
+    <h1 style="text-align: center;">Riak Connections</h1>
+    <br/>
+    {% for function in functions%}
+    <br><br>
+        <a style="text-decoration: none" href="function/{{function.id}}">
+            <div>
+            </div>
+        </a>
+        <hr>
+    {% endfor %}
+{% endblock %}
