@@ -13,12 +13,14 @@
     </tr>
   </thead>
   <tbody>  
+  {% for usuario in usuarios %}
   	<tr>
-  		<th scope="row">{{name}}</th>
-  		<td>{{ location }}</td>
-        <td>{{ role}}</td>
-  		<td> {{fulname}}</td>
-  		<td>  
+  		<th scope="row">{{usuario.name}}</th>
+  		<td>{{ usuario.location }}</td>
+        <td>{{ usuario.role}}</td>
+        <td>{{ usuario.fullname}}</td>
+  		<td> 
+  {% endfor %}         
   </tbody>
 </table>
 {% endblock %}

@@ -21,7 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home/', views.home, name='home'),
     url(r'^functions/', views.salvar_function, name='salvar_function'),
-    url(r'^home/function/insert', views.insert_function, name='insert_function'),
-    url(r'^categorias/', views.categorias),
+    url(r'^categoria/$', views.categorias),
+    url(r'^categoria/insert/$', views.insert_function, name='insert_function'),    
     url(r'^usuarios/', views.selection_function),
 ]

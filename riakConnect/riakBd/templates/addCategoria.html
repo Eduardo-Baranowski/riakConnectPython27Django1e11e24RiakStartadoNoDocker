@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 {% block conteudo %}
     <h1>Insere</h1>
-    <form action="/home/function/insert" method="post">
+    <form action="/categoria/insert/" method="post">
     {% csrf_token %}
     <label>Nome</label>
     <input name="name" type="text">
@@ -14,7 +14,7 @@
     <input  name="role" type="text">
     <br><br>    
     <label>Apelidos</label>
-    <input  name="fulname" type="text">
+    <input  name="fullname" type="text">
     <br><br>    
     <button type="submit" class="btn btn-sucess" role="button">Fazer Inserção no Riak</button>
 {% endblock %}
